@@ -1,0 +1,19 @@
+# Создайте файл .gitignore
+cat > .gitignore << 'EOF'
+# Временные файлы
+*.tmp
+*.swp
+*.bak
+
+# Локальные тестовые файлы
+test_logs/
+local_test/
+
+# Системные файлы (чтобы случайно не коммитить)
+/etc/systemd/system/monitoring.*
+/usr/local/bin/monitoring.sh
+/var/log/monitoring.log
+
+# Резервные копии
+*~
+EOF
