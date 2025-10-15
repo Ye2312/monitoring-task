@@ -1,26 +1,19 @@
-# Process Monitoring Solution
+# Process Monitoring System
 
-## Описание
-Решение для мониторинга процесса `test` в Linux среде с отправкой HTTP запросов и логированием событий.
+This system monitors the `test` process and reports to a monitoring server.
 
-## Требования
-- Linux с systemd
-- curl
-- root доступ для установки
+## Files
 
-## Структура проекта
-# monitoring-task/
+- `monitoring.sh` - Main monitoring script
+- `monitoring.service` - Systemd service file
+- `monitoring.timer` - Systemd timer (runs every minute)
+- `install.sh` - Installation script
+- `uninstall.sh` - Uninstallation script
 
-── monitoring.sh # Основной скрипт мониторинга
-── monitoring.service # Systemd service файл
-── monitoring.timer # Systemd timer файл
-── install.sh # Скрипт установки
-── test_process.sh # Mock процесс для тестирования
+## Installation
 
-## Установка
+1. Clone the repository:
 ```bash
-# Сделайте скрипты исполняемыми
-chmod +x install.sh monitoring.sh test_process.sh
-
-# Запустите установку
+git clone https://github.com/Ye2312/monitoring-task.git
+cd monitoring-task
 sudo ./install.sh
