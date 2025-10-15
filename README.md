@@ -9,13 +9,13 @@
 - root доступ для установки
 
 ## Структура проекта
-monitoring-task/
-├── monitoring.sh # Основной скрипт мониторинга
-├── monitoring.service # Systemd service файл
-├── monitoring.timer # Systemd timer файл
-├── install.sh # Скрипт установки
-├── test_process.sh # Mock процесс для тестирования
-└── README.md # Документация
+# monitoring-task/
+
+── monitoring.sh # Основной скрипт мониторинга
+── monitoring.service # Systemd service файл
+── monitoring.timer # Systemd timer файл
+── install.sh # Скрипт установки
+── test_process.sh # Mock процесс для тестирования
 
 ## Установка
 ```bash
